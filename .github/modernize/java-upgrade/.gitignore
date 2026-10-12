@@ -1,0 +1,18 @@
+# Maven build output
+target/
+out/
+
+# IDE settings
+.idea/
+*.iml
+.vscode/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+secrets.properties
+
+# Operating system files
+.DS_Store
+Thumbs.db
