@@ -9,8 +9,8 @@ import java.util.Properties;
 
 public class EmailSender {
     public static void sendOtp(String recipientEmail, String otp) {
-        final String fromEmail = "nicuserlog@gmail.com"; // your email
-        final String emailPassword = "srgr podd vnrg hbsm"; // use App Password
+        final String fromEmail = ""; // your email
+        final String emailPassword = ""; // use App Password
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -32,10 +32,9 @@ public class EmailSender {
             msg.setSubject("Your OTP Code");
             msg.setText("Your OTP code is: " + otp);
             Transport.send(msg);
-            System.out.println("OTP Sent Successfully "+otp);
+            System.out.println("OTP Sent Successfully " + otp);
         } catch (MessagingException e) {
             e.printStackTrace();
         }
     }
 }
-
