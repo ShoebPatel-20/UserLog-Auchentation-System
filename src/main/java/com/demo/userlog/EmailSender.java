@@ -9,8 +9,8 @@ import java.util.Properties;
 
 public class EmailSender {
     public static void sendOtp(String recipientEmail, String otp) {
-        final String fromEmail = ""; // your email
-        final String emailPassword = ""; // use App Password
+        final String fromEmail = "example.gmail.com"; // your email
+        final String emailPassword = "xyz"; // use App Password
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
